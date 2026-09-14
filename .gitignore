@@ -1,0 +1,20 @@
+# KiCad temporary lock files
+*.lck
+
+# KiCad autosave and backup data
+*-backups/
+*.bak
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# Local history and generated logs
+.history/
+logs/
+*.log
+
+# OS/editor metadata
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
