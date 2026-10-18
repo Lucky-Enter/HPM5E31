@@ -1,4 +1,4 @@
-# HPM5E3Y BGA121 内置 PHY 与 ESC0_P1 RMII 资源说明
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          332# HPM5E3Y BGA121 内置 PHY 与 ESC0_P1 RMII 资源说明
 
 本文总结 HPM5E3Y BGA121 同时使用一个内置 Ethernet PHY，以及通过 `ESC0_P1` 连接外部 100BASE-TX PHY（RMII）的时钟、引脚和复用关系。
 

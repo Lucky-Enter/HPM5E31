@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.62,
-          "width": 0.56
+          "height": 0.28,
+          "width": 0.8
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.0,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -60,15 +76,64 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|97717500|104797499|b6314f77-0676-402e-8883-2ca9cbcf81b2|44e62d6d-2b2d-4377-8277-cf856ea632b4",
+          ""
+        ],
+        [
+          "clearance|97867500|105322501|44e62d6d-2b2d-4377-8277-cf856ea632b4|6d1292fc-ec90-47ca-8241-013373ba9807",
+          ""
+        ],
+        [
+          "clearance|97867500|105822500|6d1292fc-ec90-47ca-8241-013373ba9807|546b6dcf-c602-4345-89c4-8181f466be18",
+          ""
+        ],
+        [
+          "clearance|97867500|106672501|9dde2823-dedc-487f-bea5-448052d8f43e|546b6dcf-c602-4345-89c4-8181f466be18",
+          ""
+        ],
+        [
+          "clearance|97892500|106672501|9dde2823-dedc-487f-bea5-448052d8f43e|d94c4838-d0df-4225-95b2-5c6bd7729c16",
+          ""
+        ],
+        [
+          "clearance|99217500|104347499|40c85821-0e81-49c7-98b1-bd21b1b20d40|d3081b93-9201-40b3-8dcd-1151f63881b9",
+          ""
+        ],
+        [
+          "courtyards_overlap|61603461|89895000|30a23ac4-32e7-446c-b3b3-661be63e5435|b2d63498-5afa-4bc6-a792-fa9b99f66b1b",
+          ""
+        ],
+        [
+          "courtyards_overlap|75220447|108318281|0af4397d-c962-4aaa-b691-74c79bfa83d5|56ac6a72-6dc6-42ea-9d13-d4107f8a7fec",
+          ""
+        ],
+        [
+          "courtyards_overlap|75683446|107840281|3e4fa40f-03c0-41e7-8aa1-76c5d0608875|56ac6a72-6dc6-42ea-9d13-d4107f8a7fec",
+          ""
+        ],
+        [
+          "text_thickness|71680000|116755001|0a662f8b-2c93-4805-ad7c-e574729d6338|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "unconnected_items|83574430|134502486|F.Cu|4|3e8f69bb-238b-459e-a2df-a3c12d94e051|9e210efb-1c93-4b5f-b773-6043c3efd009",
+          ""
+        ],
+        [
+          "via_dangling|64573600|120240000|1d1c061c-8cf4-4b6d-b094-0b7b4d4ed52e|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "ignore",
         "clearance": "error",
         "connection_width": "warning",
-        "copper_edge_clearance": "error",
+        "copper_edge_clearance": "ignore",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "creepage": "error",
@@ -91,7 +156,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -104,13 +169,13 @@
         "padstack": "warning",
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
+        "text_height": "ignore",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -530,10 +595,14 @@
   },
   "pcbnew": {
     "last_paths": {
+      "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "HPM5E31生产/",
+      "pos_files": "",
       "specctra_dsn": "",
+      "step": "",
+      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -676,7 +745,7 @@
         "uuid": "9987e30e-1153-4750-b40d-131d2f644468"
       }
     ],
-    "used_designators": "#PWR179-191,D6-7,R36-37,R41-47,R52,U2,C90-91",
+    "used_designators": "U15",
     "variants": []
   },
   "sheets": [
